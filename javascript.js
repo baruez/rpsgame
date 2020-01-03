@@ -114,13 +114,13 @@ function lastRound(){
       message = "It's a tie!"
   }
 
-  alert("Final score Computer: " + ComputerScore + " Player: " + HumanScore + " --> " + message);
+  alert(message);
   HumanScore = 0;
   ComputerScore = 0;
   numberOfRounds = 0;
   document.getElementById("humanResult").innerHTML = "Human Score: " +  HumanScore;
   document.getElementById("computerResult").innerHTML = "Computer Score: " +  ComputerScore;
-
+  statusReset();
   }
 }
 
@@ -130,19 +130,19 @@ function game() {
     statusReset()
     rock.classList.add("selected")
     playRound("Rock", computerSelection());
-    setTimeout(lastRound, 300)
+    setTimeout(lastRound, 100)
   })
   paper.addEventListener("click", function(){
     statusReset()
     paper.classList.add("selected")
     playRound("Paper", computerSelection());
-    setTimeout(lastRound, 300)
+    setTimeout(lastRound, 100)
   })
   scissor.addEventListener("click", function(){
     statusReset()
     scissor.classList.add("selected")
     playRound("Scissor", computerSelection());
-    setTimeout(lastRound, 300)
+    setTimeout(lastRound, 100)
 
   })
 
