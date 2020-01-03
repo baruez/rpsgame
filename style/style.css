@@ -10,8 +10,17 @@
   padding: 40px;
   margin-left: 10%;
 }
-.human img:hover{
+
+
+.selected{
   background-color: #FFCC80;
+}
+.selectedWinner{
+  background-color: #5DBB63;
+}
+
+.selectedLoser{
+  background-color: #CD5C5C;
 }
 
 .human{

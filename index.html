@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <title>RPS Game</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <script src="javascript.js"></script>
+
   </head>
   <body>
   <nav>
 
   </nav>
   <div class="human">
-      <p>Human</p>
-      <img class="button" type="button" id="rock" src="img/rock.png" alt="">
-      <img class="button" type="button" id="paper" src="img/paper.png" alt="">
-      <img class="button" id="scissor" src="img/scissor.png" alt="">
+      <div>
+        <p id="humanResult"> Human score: </p>
+      </div>
+      <img id="rock" src="img/rock.png" alt="">
+      <img id="paper" src="img/paper.png" alt="">
+      <img id="scissor" src="img/scissor.png" alt="">
 
   </div>
   <div class="vs">
@@ -23,15 +25,19 @@
 
 
   <div class="computer">
-      <p>TheOdinProject</p>
-      <img id="rock" src="img/rock.png" alt="">
-      <img id="paper" src="img/paper.png" alt="">
-      <img id="scissor" src="img/scissor.png" alt="">
+    <div>
+      <p id="computerResult"> Computer score: </p>
+    </div>
+      <img id="computerRock" src="img/rock.png" alt="">
+      <img id="computerPaper" src="img/paper.png" alt="">
+      <img id="computerScissor" src="img/scissor.png" alt="">
   </div>
 
-  <p id='result'> </p>
+  <div id="result">
+
+  </div>
 
 
-
+  <script src="javascript.js"></script>
   </body>
 </html>
